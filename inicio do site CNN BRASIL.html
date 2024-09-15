@@ -16,7 +16,7 @@
             font-family: Arial, sans-serif;
         }
         .texto-destaque {
-            font-weight: bold;
+            font-weight: arial;
         }
         .button-container {
             display: flex;
@@ -28,23 +28,35 @@
             margin-top: 20px;
             text-align: center;
         }
-        .img-fluid {
-            border-radius: 20px;
-        }
+        
         .button-link {
             text-decoration: none;
         }
         .top-bar {
-            background-color: #fc0000;
+            background-color: #fa0000;
             color: #ffffff;
             text-align: center;
             padding: 10px;
-            font-weight: bold;
+            font-weight: ARIAL;
         }
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
+        }
+        a {
+            color: #000000; /* Cor do texto dos links */
+            text-decoration: none; /* Remove o sublinhado dos links */
+        }
+        a:hover {
+            color: #f10101; /* Cor do texto dos links ao passar o mouse */
+            text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+        }
+        a:visited {
+            color: #ffffff; /* Cor dos links visitados */
+        }
+        a:active {
+            color: #ffffff; /* Cor dos links ativos */
         }
     </style>
 </head>
@@ -100,17 +112,29 @@
         <h1 style="color: red;">O QUE FAZEMOS</h1>
         <h2 style="font-size: 24px;">Na CNN Brasil, nossa missão é fornecer cobertura jornalística completa e precisa dos eventos mais importantes. Oferecemos análises detalhadas, reportagens investigativas e atualizações em tempo real sobre o Brasil e o mundo, sempre com um compromisso com a verdade e a imparcialidade.</h2>
         <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/08/1307_site_2.jpg" alt="Luciana Barreto - CNN Brasil" class="img-fluid">
-        <a href="https://www.cnnbrasil.com.br/" target="_blank">CONHEÇA NOSSA HISTORIA</a>
+        <div class="top-bar">
+            <a href="https://pt.wikipedia.org/wiki/CNN_Brasil" target="_blank">CONHEÇA NOSSA HISTORIA</a>
+        </div>
+        
         <h1 style="color: red;">SINTONIZE AGORA NA CNN BRASIL</h1>
         <h2 style="font-size: 24px;">Não perca as últimas notícias e análises detalhadas sobre o que acontece no Brasil e no mundo. Sintonize agora na CNN Brasil e fique atualizado com a cobertura mais confiável e completa.</h2>
         <div id="secao-principal">
             <img src="https://www.cidademarketing.com.br/marketing/wp-content/uploads/2022/10/cnn_brasil_cnnmercado-scaled.jpg" alt="CNN BRASIL AO VIVO" class="img-fluid">
-            <a href="https://www.cnnbrasil.com.br/economia/" target="_blank">CNN BRASIL AOVIVO</a>
+            <div class="top-bar">
+                <a href="https://www.cnnbrasil.com.br/ao-vivo/" target="_blank">CNN BRASIL AOVIVO</a>
+            </div>
+            
         </div>
         <footer>
             <p>&copy; CNN BRASIL. Todos os direitos reservados.</p>
-            <p><a href="politica-privacidade.html">Política de Privacidade</a> | <a href="contato.html">Contato</a></p>
+            <p><a href="politica-privacidade.html">Política de Privacidade</a>  <a href="contato.html">Contato</a></p>
+
+            
         </footer>
+        
+    </div>
+    <div class="top-bar">
+        CNN BRASIL
     </div>
 </body>
 </html>
